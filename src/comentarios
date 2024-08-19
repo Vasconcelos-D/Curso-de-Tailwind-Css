@@ -1,0 +1,76 @@
+<body class="bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950">
+    <!-- Define um fundo gradiente com transição de cores horizontais de azul escuro -->
+
+    <header>
+        <!-- Cabeçalho da página -->
+        <div class="from-blue-400 via-black to-blue-500 p-4 flex justify-center">
+            <!-- Outro fundo gradiente para o cabeçalho com cores mais claras, padding de 4 unidades, 
+            layout flexbox, e conteúdo centralizado -->
+            <h1 class="text-white font-bold">LOJA EDDEUS FEITOSA LEITE N-32</h1>
+            <!-- Título da loja, com texto branco e negrito -->
+        </div>
+
+        <div class="border-2 border-blue-400 rounded-full m-5 space-x-12">
+            <!-- Contêiner para o menu de navegação com borda azul, arredondamento total, 
+            margens de 5 unidades e espaçamento horizontal entre itens -->
+
+            <nav>
+                <!-- Navegação principal -->
+                <ul class="flex justify-center space-x-10 p-2 m-2">
+                    <!-- Lista de itens do menu com layout flexbox, conteúdo centralizado, 
+                    espaçamento entre os itens, padding e margin -->
+
+                    <li class="text-white hover:underline">home</li>
+                    <!-- Item de menu 'home' com texto branco e sublinhado ao passar o mouse -->
+
+                    <li class="text-white hover:underline">quem somos?</li>
+                    <!-- Item de menu 'quem somos?' com texto branco e sublinhado ao passar o mouse -->
+
+                    <li class="text-white hover:underline relative group">
+                        <!-- Item de menu 'trabalhos' com texto branco e sublinhado ao passar o mouse, 
+                        posicionamento relativo para controlar o submenu e class 'group' para facilitar o hover -->
+
+                        trabalhos
+                        <!-- Texto do item do menu -->
+
+                        <ul class="absolute left-0 mt-2 w-40 bg-blue-700 text-white rounded-lg opacity-0 group-hover:opacity-100 transition duration-300">
+                            <!-- Submenu que aparece quando o usuário passa o mouse sobre 'trabalhos'. 
+                            É posicionado absolutamente à esquerda, com um leve deslocamento para baixo (mt-2), 
+                            largura de 40 unidades, fundo azul escuro, texto branco, cantos arredondados, 
+                            inicialmente invisível (opacity-0) e visível ao passar o mouse (opacity-100) 
+                            com uma transição suave de 300ms. -->
+
+                            <li class="hover:bg-blue-600 px-4 py-2">Aprendiz</li>
+                            <!-- Opção do submenu 'Aprendiz', que muda de cor ao passar o mouse, com padding interno -->
+
+                            <li class="hover:bg-blue-600 px-4 py-2">Companheiro</li>
+                            <!-- Opção do submenu 'Companheiro', que muda de cor ao passar o mouse, com padding interno -->
+
+                            <li class="hover:bg-blue-600 px-4 py-2">Mestre</li>
+                            <!-- Opção do submenu 'Mestre', que muda de cor ao passar o mouse, com padding interno -->
+
+                            <li class="hover:bg-blue-600 px-4 py-2">Mestre Instalado</li>
+                            <!-- Opção do submenu 'Mestre Instalado', que muda de cor ao passar o mouse, com padding interno -->
+                        </ul>
+                    </li>
+
+                    <li class="text-white hover:underline">contatos</li>
+                    <!-- Item de menu 'contatos' com texto branco e sublinhado ao passar o mouse -->
+
+                    <li class="text-white hover:underline">suporte</li>
+                    <!-- Item de menu 'suporte' com texto branco e sublinhado ao passar o mouse -->
+
+                    <a href="#login">
+                        <!-- Link para a tela de acesso -->
+                        <img src="Logo EDDEUS.png" alt="Logo da Loja" width="40px">
+                        <!-- Imagem da logo da loja, com largura de 40px -->
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div>
+        <!-- Este espaço está reservado para mais conteúdo da página -->
+    </div>
+</body>
