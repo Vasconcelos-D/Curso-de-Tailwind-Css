@@ -7,84 +7,79 @@
     <link href="output.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+body {
+    padding-top: 4rem; /* 4rem = 64px, que é o equivalente a h-16 do Tailwind */
+}
+
 <body class="bg-gradient-to-r from-blue-950 via-black to-blue-950">
-    <header>
+    <header class="fixed top-0 left-0 w-full h-16 bg-white shadow-lg z-10">
+        <!--
         <div class="from-blue-400 via-black to-gray-100 p-4 text-center">
+            <div class="from-blue-400 via-black to-gray-100 p-4 text-center"></div>
             <h1 class="text-white font-bold text-sm lg:text-2xl ">Aug∴ Resp∴ Loja∴ Eddeus Feitosa Leite, N°32</h1>
             <p class="text-white font-bold text-sm lg:text-2xl ">Oriente∴ Itaporanga-PB</p>
         </div>
-    <div class="bg-gray-200"> 
-        <div class="grid grid-cols-6 gap-2">
-            <div class=" bg-slate-500 col-span-1">
-                <img src="Logo EDDEUS.png" alt="40px" width="40px">
+        --> 
+    <div class="bg-cover bg-center h-24 flex justify-center items-center shadow-lg z-10" style="background-image: url(div8f.jpg);"> 
+        <div class="grid grid-cols-6">
+            <div class="flex justify-center items-center ">
+                <img src="Logo EDDEUS.png" alt="75px" width="75px">
             </div>
-            <div class="bg-slate-500  col-span-4">
-                <ul class="text-sm flex sm:justify-center lg:text-xl items-center space-x-10">
+            <div class="col-span-4 flex justify-center items-center">
+                <ul class="text-sm flex sm:justify-center lg:text-xl space-x-14">
                     <li class="text-white hover:underline text-xs lg:text-base">Galeria dos VMs</li>
-                    <li class="text-white hover:underline text-xs lg:text-base">quem somos?</li>                  
-                    <li class="text-white hover:underline text-xs lg:text-base">Instituições Para-Maçônicas</li>
-                    <li class="text-white hover:underline text-xs lg:text-base">Contatos</li>
+                    <li class="text-white hover:underline text-xs lg:text-base ">Quem somos?</li>                  
+                    <li class="text-white hover:underline text-xs lg:text-base ">Instituições Para-Maçônicas</li>
+                    <li class="text-white hover:underline text-xs lg:text-base ">Nossas Sessões</li>  
+                    <li class="text-white hover:underline text-xs lg:text-base ">Contatos</li>
                 </ul>
             </div>
-            <div class="bg-slate-500 ">
-                <h2>Tema orkut
+            <div class="#">
 
-                </h2>
             </div>
             
         </div>
-        <!--
-        <nav> 
-            
-            <ul class="text-sm flex sm:justify-center lg:text-xl items-center space-x-32">
-               
-                
-                <li class="text-white hover:underline text-xs lg:text-base">Galeria dos VMs</li>
-                <li class="text-white hover:underline text-xs lg:text-base">quem somos?</li>                  
-                <li class="text-white hover:underline text-xs lg:text-base">Instituições Para-Maçônicas</li>
-                <li class="text-white hover:underline text-xs lg:text-base">Contatos</li>
-                <button class=" bg-white text-sm text-black font-bold border-2 hover:underline rounded-3xl inline-flex items-center py-1 px-6">
-                    <a href="#"> <i class="fa-solid fa-skull-crossbones fa-beat-fade mr-2" style="font-size: 24px; ">
-                    </i><span>Área Restrita</span></a>
-                </button>
-            </ul>
-        </nav>
-        -->
-    </div>
-        
+    </div>     
     </header>
-    <div class="text-white text-center ">
+    <div class=" text-center pt-16">
+        <div>
+            <img src="ses.jpeg" alt="Imagem" class="w-full scroll-pt-10">
+        </div>
+        <!--
             <div class="mx-auto  m-2 p-2 border-x-2 rounded-2xl h-60 w-60">
-                <!-- 
+              
                 Este div está sendo centralizado horizontalmente usando a classe mx-auto.
                 Ele também possui margens, padding, bordas laterais e cantos arredondados.
                 A altura e largura do div são definidas por h-60 e w-60, respectivamente. 
-                -->
+              
+                
+                
                 <img src="Logo EDDEUS.png" alt="" width="300px" height="300px" >
-                <!-- 
+               
                 Imagem dentro do div, com largura e altura específicas definidas.
                 As classes w-[300px] e h-[300px] ajustam o tamanho da imagem.
-                -->
+                
             </div>
+         -->
             <div class="grid grid-cols-3 gap-2">
                  <div class="bg-gray-500 border-2 rounded-2xl">   
-                    <h3 class="text-sm lg:text-2xl m-2 p-2 ">Origem da Maçônaria</h3>
-                    <p class="text-sm lg:text-2xl m-2 p-2">
+                    <h3 class="text-sm lg:text-2xl m-2 p-2 text-white">Origem da Maçônaria</h3>
+                    <p class="text-sm lg:text-2xl m-2 p-2 text-white">
                         A maçonaria tem origem nas guildas medievais de canteiros que, a partir do final do século XIII, regulamentavam a qualificação da profissão
                         e a sua interação com autoridades e clientes. As lendas dos companheiros referem-se a três fundadores lendários: Salomão, Mestre Tiago e Pai Soubise,
                         que supostamente viram nascer a ordem dos companheiros durante a construção do Templo de Salomão. 
                     </p >
                  </div>
                  <div class="bg-gray-500 border-2 rounded-2xl">
-                    <h3 class="text-sm lg:text-2xl m-2 p-2 ">Signficado do nome Maçôm</h3>
-                    <p class="text-sm lg:text-2xl m-2 p-2 ">
+                    <h3 class="text-sm lg:text-2xl m-2 p-2 text-white">Signficado do nome Maçôm</h3>
+                    <p class="text-sm lg:text-2xl m-2 p-2 text-white">
                         A palavra maçom vem do francês "maçon", que significa "pedreiro". A palavra maçonaria vem do francês "maçonnerie", que significa "construção". 
                         A palavra maçom também pode ser um aportuguesamento do inglês "mason" e do alemão "metz", que significa "cortador de pedra". 
                     </p>
                 </div>
                 <div class="bg-gray-500 border-2 rounded-2xl">
-                    <h3 class="text-sm lg:text-2xl m-2 p-2 ">Maçonaria atual</h3>
-                    <p class="text-sm lg:text-2xl m-2 p-2">
+                    <h3 class="text-sm lg:text-2xl m-2 p-2 text-white">Maçonaria atual</h3>
+                    <p class="text-sm lg:text-2xl m-2 p-2 text-white">
                         A maçonaria é uma sociedade filosófica, filantrópica e universal que tem como missão promover a amizade, as boas obras, a verdade e o reconhecimento 
                         dos semelhantes como homens e irmãos. Os maçons reúnem-se em lojas, que são organizadas por região e se encontram nos cinco continentes. Os maçons geralmente
                         usam um avental, em referência aos antigos pedreiros das catedrais.
