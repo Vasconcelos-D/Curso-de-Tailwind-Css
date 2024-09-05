@@ -19,3 +19,5 @@ rounded-lg shadow-md filter grayscale hover:grayscale-0 transition-all duration-
         div class="flex">
         img src="Logo EDDEUS.png" alt="Logo da Loja∴" class="w-12 h-12">
         /div>
+
+        bg-gradient-to-r <!--from-blue-950 via-black to-blue-950-->
