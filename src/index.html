@@ -11,24 +11,72 @@
 
 <body class="bg-gradient-to-r from-blue-950 via-black to-blue-950">
 
-    <header class="fixed top-0 left-0 w-full h-16 bg-white-10">
-        <div class="border-2 rounded-2xl flex justify-center items-center shadow-lg z-10">
-                <div class="flex justify-center items-center p-2 m-2">
-                    <nav>
-                        <ul class="text-sm flex sm:justify-center lg:text-xl space-x-14">
-                            <li><a href="#" class="text-white hover:underline text-xs lg:text-base"> Galeria dos VMs</a></li>
-                            <li><a href="#" class="text-white hover:underline text-xs lg:text-base ">Quem somos?</a></li>
-                            <li><a href="#" class="text-white hover:underline text-xs lg:text-base ">Instituições Para-Maçônicas</a></li>
-                            <li><a href="#" class="text-white hover:underline text-xs lg:text-base ">Nossas Sessões</a></li>
-                            <li><a href="#" class="text-white hover:underline text-xs lg:text-base ">Contatos</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="bg-gradient-to-r from-blue-950 via-black to-blue-950 fixed top-0 left-0 w-full h-16 bg-white-10">
+        <div class="border-2 rounded-2xl flex justify-center items-center">
+            <div class="flex justify-center items-center p-2 m-2">
+                <nav>
+                    <ul class="text-sm flex sm:justify-center lg:text-xl space-x-14">
+                        <!-- Cada <li> representa um item de lista com link. O flex em cada <a> alinha o ícone e o texto na mesma linha -->
+
+                        <li>
+                            <!-- Link para "Galeria dos VMs" com ícone de galeria (usando Font Awesome) -->
+                            <a href="#" class="text-white hover:underline text-xs lg:text-base flex items-center">
+                                <!-- Ícone da galeria usando Font Awesome (fa-images) e uma margem à direita (mr-2) -->
+                                <i class="fas fa-images mr-2"></i>
+                                <!-- Texto do link "Galeria dos VMs" -->
+                                Galeria dos VMs
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- Link para "Quem somos?" com ícone de usuários (fa-users) -->
+                            <a href="#" class="text-white hover:underline text-xs lg:text-base flex items-center">
+                                <!-- Ícone de usuários usando Font Awesome -->
+                                <i class="fas fa-users mr-2"></i>
+                                <!-- Texto do link "Quem somos?" -->
+                                Quem somos?
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- Link para "Instituições Para-Maçônicas" com ícone de universidade (fa-university) -->
+                            <a href="#" class="text-white hover:underline text-xs lg:text-base flex items-center">
+                                <!-- Ícone de universidade usando Font Awesome -->
+                                <i class="fas fa-university mr-2"></i>
+                                <!-- Texto do link "Instituições Para-Maçônicas" -->
+                                Instituições Para-Maçônicas
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- Link para "Nossas Sessões" com ícone de calendário (fa-calendar-alt) -->
+                            <a href="#" class="text-white hover:underline text-xs lg:text-base flex items-center">
+                                <!-- Ícone de calendário usando Font Awesome -->
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                <!-- Texto do link "Nossas Sessões" -->
+                                Nossas Sessões
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- Link para "Contatos" com ícone de telefone (fa-phone) -->
+                            <a href="#" class="text-white hover:underline text-xs lg:text-base flex items-center">
+                                <!-- Ícone de telefone usando Font Awesome -->
+                                <i class="fas fa-phone mr-2"></i>
+                                <!-- Texto do link "Contatos" -->
+                                Contatos
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
             </div>
+        </div>
         </div>
     </header>
 
-    <div class=" pt-24">
+
+    <div class="pt-24">
         <!--
         <div>
             <img src="ses.jpeg" class="w-full rounded-2xl" alt="Imagem">
@@ -39,7 +87,7 @@
         <div class="grid grid-cols-3 gap-2">
 
             <!-- Primeiro container que contém a seção "Origem da Maçonaria" -->
-            <div class="container bg-gray-500 border-2 rounded-2xl">
+            <div class="container bg-gray-500 border-2 rounded-2xl p-4 m-4">
                 <!-- Cabeçalho da seção, com texto de tamanho pequeno (text-sm) em telas pequenas e tamanho grande (lg:text-2xl) em telas maiores -->
                 <h3 class="text-sm lg:text-2xl m-2 p-2 text-white">Origem da Maçônaria</h3>
                 <!-- Parágrafo explicando a origem da Maçonaria, com o mesmo estilo de texto e espaçamento aplicado ao cabeçalho -->
@@ -53,7 +101,7 @@
             </div>
 
             <!-- Segundo container que contém a seção "Significado do nome Maçom" -->
-            <div class="container bg-gray-500 border-2 rounded-2xl">
+            <div class="container bg-gray-500 border-2 rounded-2xl p-4 m-4">
                 <!-- Cabeçalho da seção, com o mesmo estilo de texto do primeiro container -->
                 <h3 class="text-sm lg:text-2xl m-2 p-2 text-white">Significado do nome Maçom</h3>
                 <!-- Parágrafo explicando o significado do nome Maçom, com o mesmo estilo de texto e espaçamento aplicado ao cabeçalho -->
@@ -66,7 +114,7 @@
             </div>
 
             <!-- Terceiro container que contém a seção "Maçonaria atual" -->
-            <div class="container bg-gray-500 border-2 rounded-2xl">
+            <div class="container bg-gray-500 border-2 rounded-2xl p-4 m-4">
                 <!-- Cabeçalho da seção, com o mesmo estilo de texto do primeiro e segundo containers -->
                 <h3 class="text-sm lg:text-2xl m-2 p-2 text-white">Maçonaria atual</h3>
                 <!-- Parágrafo explicando o que é a Maçonaria na atualidade, com o mesmo estilo de texto e espaçamento aplicado ao cabeçalho -->
