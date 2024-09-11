@@ -1,68 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maconaria</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-gray-100 to-blue-200 min-h-screen">
-    <div class="container mx-auto px-4 pt-6 pb-8">
-        <header class="bg-blue-500 text-white mb-8 rounded-lg shadow-xl transform hover:-translate-y-1 transition-transform duration-300 ease-in-out">
-            <div class="container mx-auto px-4 py-6">
-                <h1 class="text-3xl font-bold mb-2 text-shadow-md">Maconaria</h1>
-                <p class="text-xl animate-pulse">Loja de materiais para construção</p>
+
+<body class=" min-h-screen">
+    <div class=" container mx-auto">
+            <div> <!--Criando bagge-->
+                <h4 class="font-semibold mb-2">Component bag\tag</h4>
+                <div class="inline-flex items-center text-sm bg-green-100 px-1.5 py-0.5 rounded-md text-green-800 font-medium">
+                    Ativo
+
+                </div>
+                <div class="inline-flex items-center text-sm bg-green-100 px-1.5 py-0.5 rounded-full text-green-800 font-medium">
+                    Ativo
+
+                </div>
             </div>
-        </header>
+            <div>
+                <div class="inline-flex items-center text-sm bg-red-100 px-1.5 py-0.5 rounded-md text-red-800 font-medium">
+                    Inativo
 
-        <nav class="bg-white shadow-md mb-8 rounded-lg">
-            <ul class="container mx-auto px-4 flex justify-center space-x-6 py-4">
-                <li><a href="#produtos" class="hover:text-blue-600 transition-colors duration-300 hover:underline decoration-wavy decoration-blue-400">Produtos</a></li>
-                <li><a href="#servicos" class="hover:text-blue-600 transition-colors duration-300 hover:underline decoration-wavy decoration-blue-400">Serviços</a></li>
-                <li><a href="#contato" class="hover:text-blue-600 transition-colors duration-300 hover:underline decoration-wavy decoration-blue-400">Contato</a></li>
-            </ul>
-        </nav>
+                </div>
+                <div class="inline-flex items-center text-sm bg-red-100 px-1.5 py-0.5 rounded-full text-red-800 font-medium">
+                    Inativo
 
-        <main class="mb-16">
-            <section id="produtos" class="mb-12 bg-white rounded-lg shadow-md p-6 transform hover:-translate-y-1 transition-transform duration-300 ease-in-out">
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Produtos</h2>
-                <p class="mb-6 animate-fade-in-up">Nossa loja oferece uma variedade de materiais para construção:</p>
-                <ul class="list-disc list-inside pl-4">
-                    <li>Cimento Portland</li>
-                    <li>Areia</li>
-                    <li>Granito</li>
-                    <li>Alumínio</li>
-                    <li>Chumbo</li>
-                </ul>
-            </section>
+                </div>
+            </div>
+            <div>
+                <div class="inline-flex items-center text-sm bg-yellow-100 px-1.5 py-0.5 rounded-md text-yellow-800 font-medium">
+                    Em progresso
 
-            <section id="servicos" class="mb-12 bg-white rounded-lg shadow-md p-6 transform hover:-translate-y-1 transition-transform duration-300 ease-in-out">
-                <h2 class="text-2xl font-semibold mb-4 text-green-600">Serviços</h2>
-                <p class="mb-6 animate-fade-in-up">Oferecemos diversos serviços para atender às suas necessidades:</p>
-                <ul class="list-disc list-inside pl-4">
-                    <li>Entrega rápida</li>
-                    <li>Consultoria técnica</li>
-                    <li>Montagem de materiais</li>
-                    <li>Limpeza e manutenção</li>
-                </ul>
-            </section>
+                </div>
+                <div class="inline-flex items-center text-sm bg-yellow-100 px-1.5 py-0.5 rounded-full text-yellow-800 font-medium">
+                    Em progresso
 
-            <section id="contato" class="bg-white rounded-lg shadow-md p-6 transform hover:-translate-y-1 transition-transform duration-300 ease-in-out">
-                <h2 class="text-2xl font-semibold mb-4 text-purple-600">Contato</h2>
-                <p class="mb-6 animate-fade-in-up">Entre em contato conosco:</p>
-                <address class="not-italic">
-                    Av. Brasil, 123<br>
-                    São Paulo, SP<br>
-                    CEP: 01234-567<br>
-                    Telefone: (11) 98765-4321<br>
-                    Email: maconaria@exemplo.com.br
-                </address>
-            </section>
-        </main>
+                </div>
+            </div>
+            <div>
+                <h4 class=" mb-2 rounded-2xl border-2 m-2 p-2 shadow-2xl text-black">
+                    Component Card
+                </h4>
+                <div class=" mb-2 border-2 rounded-2xl m-2 p-2 shadow-2xl text-black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum quaerat commodi earum sequi,
+                    impedit quam esse. Placeat sapiente, perferendis, quam, provident non consectetur molestias tempore
+                    corporis illo reiciendis voluptate?
+    
+                </div>
 
-        <footer class="bg-blue-500 text-white text-center py-4 fixed bottom-0 w-full rounded-t-lg shadow-xl">
-            <p>&copy; 2023 Maconaria. Todos os direitos reservados.</p>
-        </footer>
+            </div>
+            <div> <!--Criando button-->
+                <h5 class=" mb-2 m-2 p-2 border-2 rounded-2xl  shadow-2xl text-black">Component Button</h5>
+                <button
+                    class="text-sm mb-2 m-2 p-2 bg-blue-400  hover:bg-blue-600 px-4 py-1 rounded  text-black shadow-md ">
+                    Save!
+                </button>
+                <button
+                    class="text-sm mb-2 m-2 p-2 bg-blue-400  hover:bg-blue-600 px-6 py-2 rounded  text-black shadow-md ">
+                    Save!
+                </button>
+                <button
+                    class="text-base mb-2 m-2 p-2 bg-blue-400  hover:bg-blue-600 px-8 py-4 rounded  text-blacks shadow-md ">
+                    Save!
+                </button>
+            </div>
+            <div class="space-y-4"><!--Criando input-->
+                <h5 class="mb-2 m-2 p-2 border-2 rounded-2xl shadow-2xl text-black">Componet Input</h5>
+                <input 
+                type="text"
+                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-2 py-1 text-sm text-gray-700 placeholder-gray-400 focus:outline-none"
+                placeholder="Digite seu nome"
+                >
+                <input 
+                type="text"
+                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-3 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none"
+                placeholder="Digite seu nome"
+                >
+                <input 
+                type="text"
+                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-5 py-3 text-lg text-gray-700 placeholder-gray-400 focus:outline-none"
+                placeholder="Digite seu nome"
+                >
+                <input 
+                type="text"
+                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:opacity-25 px-5 py-3 text-lg text-gray-700 placeholder-gray-400 focus:outline-none"
+                placeholder="Digite seu nome"
+                ><!--teste com a opacidade de anel (RING,FOCUS)-->
+                <input 
+                type="text"
+                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-5 py-3 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:opacity-25 placeholder-gray-400 focus:outline-none transition duration-700 ease-in-out"
+                placeholder="Digite seu nome"
+                ><!--Teste de Trasition no codigo(DURATION )-->
+            </div>
     </div>
+
 </body>
+
 </html>
