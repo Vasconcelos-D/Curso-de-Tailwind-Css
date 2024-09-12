@@ -11,13 +11,14 @@
         <h3  class="text-lg font-semibold mb-4 text-center text-white">Sois Maçom?</h3>
         <input type="text" placeholder="Grau" id="Mestre" class="w-full mb-4 p-2 border-2 border-gray-300 rounded">
         <input type="password" placeholder="Palavra-Passe" id="Palavra-Passe" class="w-full mb-4 p-2 border-2 border-gray-300 rounded" >
-        <input type="submit" onclick="logar()" value="Entrar" class="w-full bg-blue-100 text-white p-2 rounded hover:bg-blue-400 cursor-pointer">
+        <input type="submit" onclick="logar()" value="Entrar" class="w-full bg-blue-100 text-white p-2 rounded hover:bg-black cursor-pointer">
     </form>
     <script>
         function logar(){
             var login = document.getElementById('Mestre').value;
             var senha = document.getElementById('Palavra-Passe').value;
             if (login == "Mestre" && senha == "amec") {
+                window.location.href = "index.html";
                 alert('Sucesso');
             }
             else {
