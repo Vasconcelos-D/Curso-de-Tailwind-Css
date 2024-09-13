@@ -38,3 +38,11 @@ rounded-lg shadow-md filter grayscale hover:grayscale-0 transition-all duration-
             </div>
             </div>
         </header>
+
+        <footer class="bg-white shadow-lg rounded-2xl m-8">
+            <div class=" border rounded-2xl  text-black mb-5 p-4 m-4">
+                <p class="text-center font-bold">&copy; 2024 Loja∴ Maçônica EDDEUS FEITOSA LEITE Nº 32. Todos os
+                    direitos
+                    reservados.</p>
+            </div>
+        </footer>
