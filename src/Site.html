@@ -8,28 +8,207 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 ">
+<body class="bg-gray-50 text-gray-600">
     <!--Header-->
     <header>
         <div class="#">
-            <div class="container mx-auto px-4 h-24 flex items-center ">
+            <div class="container max-w-5xl mx-auto px-4 h-24 flex items-center ">
 
                 <div class="font-black">
-                    Logo
+                    LOGO
                 </div>
 
 
-                <ul class="ml-auto flex items-center justify-center space-x-4">
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-700"><li>Como reservar</li></a>
-                    <a href="#"><li>Sobre nós</li></a>
-                    <a href="#"><li>Informações</li></a>
-                    <a href="#"><li>Contato</li></a>
-                    
+                <ul class="ml-auto flex items-center space-x-3">
+
+                    <a href="#" class=" text-gray-600 hover:text-gray-800 hover:underline">
+                        <li>Como reservar</li>
+                    </a>
+                    <a href="#" class=" text-gray-600 hover:text-gray-800 hover:underline">
+                        <li>Sobre nós</li>
+                    </a>
+                    <a href="#" class=" text-gray-600 hover:text-gray-800 hover:underline">
+                        <li>Informações</li>
+                    </a>
+                    <a href="#" class=" text-gray-600 hover:text-gray-800 hover:underline">
+                        <li>Contato</li>
+                    </a>
+
                 </ul>
+
             </div>
         </div>
     </header>
     <!--/Header-->
+
+    <!--baner-->
+    <div class="bg-[url('img2/main.jpg')] bg-no-repeat bg-cover h-[450px]">
+
+        <div class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center">
+            <div>
+                <div class="text-center">
+                    <h1 class="text-gray-100 text-3xl mb-2">Aonde você quer ir?</h1>
+                    <p class="text-white">Escolha o estado e cidade para achar os melhores resorts.</p>
+                </div>
+                <div class="mt-7">
+                    <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        <select class=" bg-gray-50 px-3 py-2 rounded text-gray-500">
+                            <option value="#">Escolha estado</option>
+                        </select>
+                        <select class="bg-gray-50 px-3 py-2 rounded text-gray-500">
+                            <option value="#">Escolha cidade</option>
+                        </select>
+                        <button
+                            class="col-span-2 lg:col-span-1 items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded inline-flex">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke-width="1.5" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z">
+                                </path>
+                            </svg>
+                            Pesquisar resorts
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/baner-->
+
+    <!--featured resort-->
+
+    <div>
+        <div class="container max-w-5xl mx-auto px-4 py-20">
+            <div class="flex flex-col-reverse lg:flex-row">
+                <!--Column 1-->
+                <div class="lg:pr-10">
+                    <div class="text-sm font-medium text-gray-400">RESORT EM DESTAQUE</div>
+                    <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
+                    <div class="text-sm font-medium text-gray-400 mt-2">Hotel qualidade 5 estrelas</div>
+                    <div class="text-sm font-medium text-gray-400 mt-4">
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore asperiores, nisi
+                            iusto molestias corrupti optio dolore labore assumenda id, vero commodi, perspiciatis dolor
+                            incidunt odit! Praesentium laboriosam libero ex.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit animi amet laudantium
+                            fugit ut atque culpa quas. Placeat, repudiandae veniam pariatur dolore eum praesentium
+                            inventore ratione culpa. Excepturi, commodi quos.</p>
+                        <div class="mt-4">
+                            <a href=""
+                                class="text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded items-center inline-flex">
+                                Solicitar reserva
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke-width="1.5" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--Fim da Column 1-->
+                    <!--Column 2-->
+                </div>
+                <div class="flex-shrink-0 lg:ml-auto mb-5 lg:mb-0">
+                    <img src="img2/hoteis0.jpg" alt="IMG 0" width="450" class="rounded-md overflow-hidden">
+                </div>
+                <!--Fim da Column 2-->
+            </div>
+        </div>
+    </div>
+
+    <!--/featured resort-->
+
+
+    <!--reseorts grids-->
+    <div>
+        <div class="container  max-w-5xl mx-auto px-6">    
+            <h3 class="text-2xl text-center font-semibold text-gray-500 mb-8">Conheça mais resorts</h3>
+            <div class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-4 space-y-6 md:space-y-0">
+                <div class="relative md:col-span-2 md:row-span-2 rounded-md overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold">Beach Park Resort</div>
+                    <img src="img2/hoteis1.jpg" alt="HT1" class="w-full h-full object-cover">
+                </div>
+                <div class="relative md:col-span-2 md:h-64 rounded-md overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold">Salinas do Maragogi Resort</div>
+                    <img src="img2/hoteis2.jpg" alt="HT2" class="w-full h-full object-cover">
+                </div>
+                <div class="relative rounded-md overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold">Grand Palladium</div>
+                    <img src="img2/hoteis3.jpg" alt="HT3" class="w-full h-full object-cover">
+                </div>
+                <div class="relative rounded-md overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold">Arraial d'Ajuda Eco Resort</div>
+                    <img src="img2/hoteis4.jpg" alt="HT4" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/resorts grids-->
+
+    <!--form-->
+    <div>
+        <div class="container  max-w-5xl px-4 mx-auto py-20 flex justify-center">
+            <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <select class=" bg-gray-50 px-3 py-2 rounded text-gray-500">
+                    <option value="#">Escolha estado</option>
+                </select>
+                <select class="bg-gray-50 px-3 py-2 rounded text-gray-500">
+                    <option value="#">Escolha cidade</option>
+                </select>
+                <button
+                    class="col-span-2 lg:col-span-1 items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded inline-flex">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke-width="1.5" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z">
+                        </path>
+                    </svg>
+                    Pesquisar resorts
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!--/forms-->
+    <!--footer-->
+    <div class="border-t border-gray-00">
+        <div class="container  max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="text-gray-400 font-black">
+            LOGO
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="#!" role="button">
+                    <!-- Facebook -->
+                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#1877f2]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                      </svg>
+                    </span>
+                  </a>
+                  
+                  <a href="#!" role="button">
+                    <!-- Instagram -->
+                    <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                      </svg>
+                    </span>
+                  </a>               
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!--/footer-->
+
 </body>
 
 </html>
