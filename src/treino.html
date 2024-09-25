@@ -8,119 +8,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class=" min-h-screen">
-    <div class=" container mx-auto">
-
-        <div>
-            <h4 class="font-semibold mb-2">Component Dropdown</h4>
-            <div class="relative group">
-                <button
-                    class="flex items-center bg-white border border-gray-300 rounded focus:border-blue-500 px-3 py-1 text-sm text-gray-700 placeholder-gray-400 focus:outline-none shadow-lg">
-                    Save
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25L12 15.75 4.5 8.25"></path>
-                    </svg>
-                </button>
-        
-                <!-- Dropdown menu -->
-                <div class="absolute hidden bg-white border border-gray-200 py-1 shadow-md rounded w-48 group-hover:block group-focus-within:block">
-                    <a href="#" class="block w-full text-sm text-gray-600 px-3 py-2 hover:bg-gray-200">Link-1</a>
-                    <a href="#" class="block w-full text-sm text-gray-600 px-3 py-2 hover:bg-gray-200">Link-2</a>
-                    <a href="#" class="block w-full text-sm text-gray-600 px-3 py-2 hover:bg-gray-200">Link-3</a>
-                    <a href="#" class="block w-full text-sm text-gray-600 px-3 py-2 hover:bg-gray-200">Link-4</a>
-                    <a href="#" class="block w-full text-sm text-gray-600 px-3 py-2 hover:bg-gray-200">Link-5</a>
-                </div>
+<body class="bg-cover" style="background: url(img/div8f.jpg);">
+    <div>
+        <div class="w-96 shadow-xl mx-auto text-white bg-clip-padding backdrop-filter bg-white bg-opacity-10 backdrop-blur-md mt-20 py-10 px-8 rounded-md">
+            <div class=" text-center text-2xl">
+                Login
             </div>
-        </div>
-        
-
-
-
-
-
-        <div> <!--Criando bagge-->
-            <h4 class="font-semibold mb-2">Component bag\tag</h4>
-            <div
-                class="inline-flex items-center text-sm bg-green-100 px-1.5 py-0.5 rounded-md text-green-800 font-medium">
-                Ativo
-
-            </div>
-            <div
-                class="inline-flex items-center text-sm bg-green-100 px-1.5 py-0.5 rounded-full text-green-800 font-medium">
-                Ativo
-
-            </div>
-        </div>
-        <div>
-            <div class="inline-flex items-center text-sm bg-red-100 px-1.5 py-0.5 rounded-md text-red-800 font-medium">
-                Inativo
-
-            </div>
-            <div
-                class="inline-flex items-center text-sm bg-red-100 px-1.5 py-0.5 rounded-full text-red-800 font-medium">
-                Inativo
-
-            </div>
-        </div>
-        <div>
-            <div
-                class="inline-flex items-center text-sm bg-yellow-100 px-1.5 py-0.5 rounded-md text-yellow-800 font-medium">
-                Em progresso
-
-            </div>
-            <div
-                class="inline-flex items-center text-sm bg-yellow-100 px-1.5 py-0.5 rounded-full text-yellow-800 font-medium">
-                Em progresso
-
-            </div>
-        </div>
-        <div>
-            <h4 class=" mb-2 rounded-2xl border-2 m-2 p-2 shadow-2xl text-black">
-                Component Card
-            </h4>
-            <div class=" mb-2 border-2 rounded-2xl m-2 p-2 shadow-2xl text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum quaerat commodi earum sequi,
-                impedit quam esse. Placeat sapiente, perferendis, quam, provident non consectetur molestias tempore
-                corporis illo reiciendis voluptate?
-
-            </div>
-
-        </div>
-        <div> <!--Criando button-->
-            <h5 class=" mb-2 m-2 p-2 border-2 rounded-2xl  shadow-2xl text-black">Component Button</h5>
-            <button
-                class="text-sm mb-2 m-2 p-2 bg-blue-400  hover:bg-blue-600 px-4 py-1 rounded  text-black shadow-md ">
-                Save!
-            </button>
-            <button
-                class="text-sm mb-2 m-2 p-2 bg-blue-400  hover:bg-blue-600 px-6 py-2 rounded  text-black shadow-md ">
-                Save!
-            </button>
-            <button
-                class="text-base mb-2 m-2 p-2 bg-blue-400  hover:bg-blue-600 px-8 py-4 rounded  text-blacks shadow-md ">
-                Save!
-            </button>
-        </div>
-        <div class="space-y-4"><!--Criando input-->
-            <h5 class="mb-2 m-2 p-2 border-2 rounded-2xl shadow-2xl text-black">Componet Input</h5>
-            <input type="text"
-                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-2 py-1 text-sm text-gray-700 placeholder-gray-400 focus:outline-none"
-                placeholder="Digite seu nome">
-            <input type="text"
-                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-3 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-                placeholder="Digite seu nome">
-            <input type="text"
-                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-5 py-3 text-lg text-gray-700 placeholder-gray-400 focus:outline-none"
-                placeholder="Digite seu nome">
-            <input type="text"
-                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:opacity-25 px-5 py-3 text-lg text-gray-700 placeholder-gray-400 focus:outline-none"
-                placeholder="Digite seu nome"><!--teste com a opacidade de anel (RING,FOCUS)-->
-            <input type="text"
-                class="w-full bg-gray-50 border border-gray-300 rounded focus:border-blue-500 px-5 py-3 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:opacity-25 placeholder-gray-400 focus:outline-none transition duration-700 ease-in-out"
-                placeholder="Digite seu nome"><!--Teste de Trasition no codigo(DURATION )-->
+                <form action="#!" class="mt-6">
+                    <div class="mb-4">
+                        <label for="#">E-mail</label>
+                        <input type="E-mail"
+                            class="bg-white bg-opacity-10 hover:bg-opacity-20 transition duration-500 shadow-sm rounded-md p-3 outline-none w-full">
+                    </div>
+                    <div class="mb-4"></div>
+                    <label for="#">Senha</label>
+                    <input type="password"
+                        class="bg-white bg-opacity-10 hover:bg-opacity-20 transition duration-500 shadow-sm rounded-md p-3 outline-none w-full">
+                
+                </form>
         </div>
     </div>
+
+
 
 </body>
 
